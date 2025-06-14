@@ -78,6 +78,60 @@ li.hebergement
 
 }
 
+div#barre-recherche
+{
+    /*width: 377px;*/
+    /*height: 49px;*/
+    border-radius: 15px;
+    border: 2px solid black;
+    gap: 24px;
+    border-width: 1px;
+
+}
+
+#recherche-btn
+{
+    width: 132px;
+    height: 49px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    gap: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width: 1px;
+    background: #0065FC;
+
+    
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+
+
+;
+}
+
+
+
+#icon-position
+{
+    /*border: 1px;*/
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-width: 1px;
+    
+
+
+}
+
 
 
 button
