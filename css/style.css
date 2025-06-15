@@ -134,12 +134,12 @@ input
     align-items: center;*/
 
     width: 50px;
-height: 34px;
-padding: auto;
-padding-inline: 20px;
-/*padding: 15px 20px -2px 10px;*/
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
+    height: 34px;
+    /*padding: auto;*/
+    padding-inline: 20px; /* espace a gauche et a droite du cadre contenant l'icone position */
+    /*padding: 15px 20px -2px 10px;*/
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 
 }
@@ -157,16 +157,6 @@ border-bottom-left-radius: 15px;
 
 }
    
-
-   
-    
-    /*width: 50px;
-    height: 49px;
-    border-width: 1px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;*/
-
-
 
 
 
