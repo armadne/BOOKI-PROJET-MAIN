@@ -67,15 +67,18 @@ li.hebergement
 
 }
 
-div#barre-recherche
+section#barre-recherche
 {
-    width: 377px;
+    display: flex;
+    width: 436px;
     height: 49px;
     border-radius: 15px;
     border: 2px solid black;
     gap: 24px;
     border-width: 1px;
-    padding-left: 10px;
+    /*padding-left: 1px;*/
+   
+    
 
 }
 
@@ -88,7 +91,8 @@ div#barre-recherche
     padding-bottom: 15px;
     padding-left: 16px;
     gap: 10px;
-    margin-left: 63px;
+    margin-left: 40px;
+    margin-bottom: 80px;
     
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -115,11 +119,46 @@ input
     
 }
 
+#cadre-icone-position
+{
+    padding-top: 15px;
+    /*margin-bottom: 20px;*/
+    background: #F2F2F2;
+    /*margin-top: 1px;*/
+    /*width: 50px;
+    height: 32px;
+    border-radius: 15px;*/
+    /*border-width: 1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    align-items: center;*/
+
+    width: 50px;
+height: 34px;
+padding: auto;
+padding-inline: 20px;
+/*padding: 15px 20px -2px 10px;*/
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+
+
+}
 
 #icon-position
 {
 
     border: 1px solid black;
+    width: 50px;
+    height: 49px;
+   /*margin-left: 50px;*/
+    
+
+
+
+}
+   
+
+   
     
     /*width: 50px;
     height: 49px;
@@ -128,7 +167,7 @@ input
     border-bottom-left-radius: 15px;*/
 
 
-}
+
 
 
 
