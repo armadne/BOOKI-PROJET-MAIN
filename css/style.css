@@ -16,18 +16,7 @@ padding: 30px;
 
 }
 
-/*
-nav
-{
-width: 294px;
-height: 35px;
-padding-right: 25px;
-padding-left: 25px;
-gap: 68px;
-list-style-type: none;
 
-}
-*/
 
 nav
 
@@ -80,12 +69,13 @@ li.hebergement
 
 div#barre-recherche
 {
-    /*width: 377px;*/
-    /*height: 49px;*/
+    width: 377px;
+    height: 49px;
     border-radius: 15px;
     border: 2px solid black;
     gap: 24px;
     border-width: 1px;
+    padding-left: 10px;
 
 }
 
@@ -98,6 +88,8 @@ div#barre-recherche
     padding-bottom: 15px;
     padding-left: 16px;
     gap: 10px;
+    margin-left: 63px;
+    
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-width: 1px;
@@ -116,29 +108,37 @@ div#barre-recherche
 ;
 }
 
+input
 
-
-#icon-position
 {
-    /*border: 1px;*/
-    background-color: #F2F2F2;
-    width: 50px;
-    height: 49px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-width: 1px;
+    border: none;
     
+}
+
+
+img#icon-position
+{
+
+    border: 1px solid black;
+    
+    /*width: 50px;
+    height: 49px;
+    border-width: 1px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;*/
 
 
 }
 
 
 
+
+/*
 button
 {
     width: 270px;
     height: 50px;
-    border-radius: 25px;
+   /* border-radius: 25px;
     padding-top: 4px;
     padding-right: 19px;
     padding-bottom: 4px;
@@ -147,6 +147,8 @@ button
     border-width: 2px;
 
 }
+*/
+
 
 :root {
     --main-color: #0065FC;
