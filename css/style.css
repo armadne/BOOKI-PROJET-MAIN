@@ -158,6 +158,21 @@ input
 }
    
 
+.button-category
+
+{
+    width: 173;
+    height: 50;
+    border-radius: 25px;
+    border-width: 2px;
+    gap: 10px;
+    padding-top: 4px;
+    padding-right: 19px;
+    padding-bottom: 4px;
+    padding-left: 19px;
+
+}
+
 
 
 
