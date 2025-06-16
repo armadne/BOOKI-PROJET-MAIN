@@ -180,6 +180,8 @@ section#categories
     border: 2px solid #D9D9D9; /* Bordure violette pointillée */
     border-radius: 25px;
     padding: 2px; /* Pour espacer légèrement le bouton de la bordure */
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
