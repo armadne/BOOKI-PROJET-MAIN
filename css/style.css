@@ -217,121 +217,62 @@ section#categories
 
 
 
-/*
-
-.button-category
-
-{
-    border-radius: 25px;
-    display: inline-block;
-    padding: 2px;
-    border: 1px solid black;
-}
-
-
-.button-category1 {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* gap entre l'icone et le texte du bouton*/
-    /*background-color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 8px 16px;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    color: black;
-    cursor: pointer;
-
-
-
-}
-
-.icones-categories {
-    width: 24px;
-    height: 24px;
-}
-
-
-*/
-
-
-
-
-/*
-button
-{
-    width: 270px;
-    height: 50px;
-   /* border-radius: 25px;
-    padding-top: 4px;
-    padding-right: 19px;
-    padding-bottom: 4px;
-    padding-left: 19px;
-    gap: 10px;
-    border-width: 2px;
-
-}
-*/
-
-
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-}
-
-.fa-solid {
-    color: var(--main-color);
-}
-
-body {
-    display: flex;
-    justify-content: center;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
 
 .card {
-    background-color: white;
+    /*background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px; /*AJT*/
+    border-radius: 20px;*/ /*AJT*/
+    
+    background: #FFFFFF;
+
+
+    width: 243px;
+    height: 227px;
+    top: 622px;
+    left: 56px;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    gap: 4px;
+    
+
 }
 
 .card img {
+
+    width: 243px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 5px;
+/*
     object-fit: cover;
-    width: 243px; /*AJT*/
-    height: 124px; /*AJT*/
+    width: 43px; /*AJT*/
+    /*height: 44px; *//*AJT*/
 }
 
 .card-title {
     font-size: 16px;
+
+    /*
+    width: 21x;
+    height: 19px;*/
+
 }
 
-.euro {
-    font-weight: 700;
+
+.hébergements-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    
 }
 
-.neutral-star {
-    color: var(--main-bg-color)
-}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -348,8 +289,31 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+
     width: 65%;
+    height: 700px;
+    
+
 }
+
+
+.hebergements .card-content
+{
+    width: 243px;
+    height: 64px;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 8px;
+
+}
+
+#afficher_plus
+{
+    margin-top: 30px;
+    font-family: Raleway, sans-serif;
+}
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -399,6 +363,58 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -440,6 +456,12 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+
+
+
+
+
 
 
 
