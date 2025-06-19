@@ -262,14 +262,40 @@ section#categories
 }
 
 
+
+
 .hébergements-cards
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
+    margin-top: 36px;
 
-    
 }
+
+.cards-hebergements
+
+{
+    width: 230px;
+    height: 439px;
+    border-radius: 20px;
+    gap: 10px;
+    /*border: 2px solid black;*/
+    background: #FFFFFF;
+
+
+
+}
+
+.cards-hebergements img
+{
+    width: 230px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
 
 
 
@@ -299,6 +325,7 @@ section#categories
     
 
 }
+
 
 
 .hebergements .card-content
@@ -349,7 +376,7 @@ section#categories
     border-bottom-left-radius: 20px;*/
 
 
-    width: 123px;
+    width: 130px;
     height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -358,6 +385,10 @@ section#categories
     border-left-width: 5px;
 
 }
+
+
+
+
 
 .populaires-cards .card-content {
     width: 67%;
