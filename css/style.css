@@ -355,7 +355,7 @@ section.activitées-marseille  {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .hebergements-and-populaires section {
@@ -363,13 +363,14 @@ section.activitées-marseille  {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    padding-bottom: 100px;
 }
 
 /****** Hebergements ***********/
 .hebergements {
 
     width: 65%;
-    height: 700px;
+    height: 10%;
     
 
 }
@@ -408,7 +409,7 @@ section.activitées-marseille  {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    width: 369px;
+    width: 333px;
     height: 130px;
     top: 622px;
     left: 326px;
@@ -424,7 +425,7 @@ section.activitées-marseille  {
     border-bottom-left-radius: 20px;*/
 
 
-    width: 130px;
+    width: 146px;
     height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
