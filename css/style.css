@@ -271,8 +271,8 @@ section#categories
 
 .hébergements-cards
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*mettre les element en ligne */
+    flex-wrap: wrap;  /* si sa dépasse : revenir a la ligne et continuer d'afficher les élements en ligne */
     gap: 40px;
     margin-top: 36px;
 
@@ -397,7 +397,20 @@ section.activitées-marseille  {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow-wrap:break-word;
+    
+    
+}
+
+.populaires article {
+  flex: 1 1 300px;
+  max-width: 300px;
+ 
 }
 
 .populaires-title {
@@ -409,8 +422,8 @@ section.activitées-marseille  {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    width: 333px;
-    height: 130px;
+    width: 269px;
+    height: 146px;
     top: 622px;
     left: 326px;
     border-radius: 20px;
@@ -425,7 +438,7 @@ section.activitées-marseille  {
     border-bottom-left-radius: 20px;*/
 
 
-    width: 146px;
+    width: 135px;
     height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -440,7 +453,7 @@ section.activitées-marseille  {
 
 
 .populaires-cards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -489,6 +502,7 @@ section.activitées-marseille  {
 body {
     display: flex;
     justify-content: center;
+    overflow-x: hidden; /* ajt du overflow */
 }
 
 .main-container {
@@ -527,22 +541,53 @@ a {
     }
 
     .hebergements {
-        width: 100%;
+        width: 90%;
+
     }
 
     .populaires {
         width: 100%;
+        max-width: 100%;
         margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
+
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+       
+        gap: 15px;
+        
+        max-width: 100%;
+        
+
+
+ 
+        border-radius: 20px;
+ 
+
+ 
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 40%;
+        max-width: 100%;
+    }
+
+    .populaires-cards img
+
+    {
+        width: 91px;
+        height: 146px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-width: 5px;
+        border-bottom-width: 5px;
+        border-left-width: 5px;
+
     }
 
     .populaires-cards .card-title {
@@ -557,8 +602,41 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-}
 
+      .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  
+  .populaires {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+   .populaires-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .populaires-cards a {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+    .populaires-cards .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+
+
+
+}
 
 
 
