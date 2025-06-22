@@ -279,7 +279,7 @@ section#categories
 }
 
 
-.cards-hebergements
+.card-activite-marseille
 
 {
     width: 310px;
@@ -296,7 +296,7 @@ section#categories
 
 }
 
-.cards-hebergements img
+.card-activite-marseille img
 {
     width: 310px;
     height: 380px;
@@ -340,18 +340,11 @@ section.activitées-marseille  {
 
 .activités-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row !important;  /* Ajouté */
+    justify-content: space-between;  /* ou center */
     gap: 20px;
     margin-top: 40px;
-    justify-content: center; /* ou space-between selon ton style */
 }
-
-
-
-
-
-
-
 
 
 
@@ -613,6 +606,15 @@ a {
     margin-bottom: 50px;
 }
 
+.card-activite-marseille
+
+{
+    width: 210px;
+height: 270px;
+border-radius: 20px;
+
+}
+
 
 
     div.activités-marseille
@@ -626,13 +628,12 @@ a {
 
 
 
-    .activités-cards {
-    flex-direction: column;
-    align-items: center;
-}
+
         
 
-    .cards-hebergements img
+
+
+    .card-activite-marseille img
 
     {
         
