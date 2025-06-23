@@ -35,22 +35,16 @@ ul
     margin-left: 710px;
 }
 
-li.activité:hover
-{
-    border-top: 2px;
-    color: #0065FC;
 
-}
-
-
-li.activité
+li.activite
 
 {
-    width: 63px;
+   width: 63px;
     height: 35px;
-    /*display: flex;*/
-
+    padding-top: 13px;
+    margin-top: -22px;
 }
+
 
 li:hover
 {
@@ -64,6 +58,8 @@ li.hebergement
 {
     width: 113px;
     height: 35px;
+    padding-top: 10px;
+    margin-top: -22px;
 
 }
 
