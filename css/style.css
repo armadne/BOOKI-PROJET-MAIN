@@ -41,7 +41,7 @@ li.activite
 {
    width: 63px;
     height: 35px;
-    padding-top: 13px;
+    padding-top: 11px;
     margin-top: -22px;
 }
 
@@ -393,9 +393,8 @@ section.activitées-marseille  {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    overflow-wrap:break-word;
+    gap: 10px;
+    
     
     
 }
@@ -412,32 +411,39 @@ section.activitées-marseille  {
     align-items: center;
 }
 
+
+
+
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
-    width: 269px;
-    height: 146px;
-    top: 622px;
-    left: 326px;
-    border-radius: 20px;
+
+
+
+  display: flex;             /* Met le contenu en ligne */
+  align-items: center;       /* Aligne au centre */
+  gap: 15px;                 /* Espace entre image et texte */
+  padding: 10px;
+  width: 100%;
+  max-width: 370px;          /* Ajustable */
+  height: 146px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;  /* ecart entre les cards*/
+  
 
 
 }
 
 .populaires-cards img {
-   /* width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;*/
+   
+
+  width: 123px;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 
 
-    width: 135px;
-    height: 146px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
 
 }
 
@@ -446,22 +452,39 @@ section.activitées-marseille  {
 
 
 .populaires-cards .card-content {
-    width: 100%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+
+  display: flex; /* flexbox afficher en horizontal par défault */
+  flex-direction: column;  /* les élements s'empilent verticalment */
+  justify-content: space-between; /* espace entre les textes entre par exemple : Hotel le soleil du matin, nuit à partir de 128euros et les etoile (notation)*/
+  height: 100%;
+  padding: 10px 0; /*marge interieur en haut et en bas = 10px et a droite et a gauche = 0px */
+  width: 100%; /* ETENDRE LA CARD AU MAX */
+
+
     
 }
 
+
 .populaires-cards .card-title {
+   
     margin-top: 10px;
     margin-bottom: 4px;
+
+  /* CORRECT margin: 0;
+  font-size: 16px;
+  font-weight: 700;*/
 }
+    
+
+
+
 
 .populaires-cards .card-subtitle {
     margin: 0;
+
+    /*margin: 0;
+  font-size: 14px;
+  font-weight: 400;*/
 }
 
 .populaires-cards .card-rating {
@@ -566,8 +589,8 @@ a {
     }
 
     .populaires-cards a {
-        width: 40%;
-        max-width: 100%;
+        width: 100%;
+        max-width: 369px;
     }
 
     .populaires-cards img
