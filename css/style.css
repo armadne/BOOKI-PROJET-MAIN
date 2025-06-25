@@ -566,6 +566,67 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+
+    /** BARRE DE NAV **/
+ nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  ul {
+    margin-left: 330px;
+    gap: 10px;
+  }
+
+  li.hebergement,
+  li.activite {
+    margin-top: 30;
+    padding: 20px;
+    width: auto;
+  }
+
+
+  /** HEBERGEMENT MARSEILLE **/
+
+  .hebergements {
+    width: 100%;
+  }
+
+  .hebergements-cards {
+    justify-content: space-between; /* pour répartir les cards */
+  }
+
+  .card {
+    max-width: calc(33.33% - 20px); /* 3 cards par ligne avec espace */
+    flex-grow: 1;
+  }
+
+
+  /** LES PLUS POPULAIRES **/
+
+    .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* ESPACE entre les cards */
+  }
+
+  .populaires-cards .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
