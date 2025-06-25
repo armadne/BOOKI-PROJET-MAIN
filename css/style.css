@@ -566,7 +566,15 @@ a {
 }
 
 
+
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
+
+
+/** POUR TABLETTE **/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -769,8 +777,9 @@ border-radius: 20px;
 
 }
 
+/**********************************************************/
 
-
+/** POUR SMARTPHONE **/
 
 
 /* Small devices (phones, less than 768px) */
@@ -788,23 +797,43 @@ margin-left: auto; /* POUR CENTRER */
 
     
     /** BARRE DE NAV **/
- nav {
+
+nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
 
-  ul {
-    margin-left: 330px;
-    gap: 10px;
-  }
+ul.onglets {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  /* ← place un à gauche, l’autre à droite */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-  li.hebergement,
-  li.activite {
-    margin-top: 30;
-    padding: 20px;
-    width: auto;
-  }
+ul.onglets li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+li:hover
+
+{
+    border-bottom: 2px #0065FC solid;
+    
+}
+
+/*******************************************************/
+
+
 
 
 
