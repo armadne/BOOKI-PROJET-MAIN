@@ -641,7 +641,7 @@ padding-bottom: 15px;
   }
 
 
-  .fa-chart-line:before, .fa-line-chart:before {
+  .fa-chart-line:before, .fa-line-chart:before {   /* ICONE BLEUE GRAPHIQUE */
     content: "\f201";
     margin-left: 610px;
   }
@@ -756,12 +756,6 @@ border-radius: 20px;
     }
 
 
-
-
-        
-
-
-
     .card-activite-marseille img
 
     {
@@ -775,9 +769,44 @@ border-radius: 20px;
 
 }
 
+
+
+
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+
+    
+#logo {
+
+margin-right: auto; /* POUR CENTRER */
+margin-left: auto; /* POUR CENTRER */
+
+}
+
+
+    
+    /** BARRE DE NAV **/
+ nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  ul {
+    margin-left: 330px;
+    gap: 10px;
+  }
+
+  li.hebergement,
+  li.activite {
+    margin-top: 30;
+    padding: 20px;
+    width: auto;
+  }
+
+
 
       .hebergements-and-populaires {
     flex-direction: column;
