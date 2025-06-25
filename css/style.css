@@ -225,7 +225,7 @@ section#categories
 
 
     width: 243px;
-    height: 227px;
+    height: 240px;
     top: 622px;
     left: 56px;
     border-radius: 20px;
@@ -269,10 +269,13 @@ section#categories
 {
     display: flex; /*mettre les element en ligne */
     flex-wrap: wrap;  /* si sa dépasse : revenir a la ligne et continuer d'afficher les élements en ligne */
-    gap: 40px;
+    gap: 25px;
     margin-top: 36px;
 
 }
+
+
+
 
 
 .card-activite-marseille
@@ -370,6 +373,8 @@ section.activitées-marseille  {
 
     width: 65%;
     height: 10%;
+
+    
     
 
 }
@@ -590,18 +595,37 @@ a {
 
   /** HEBERGEMENT MARSEILLE **/
 
-  .hebergements {
-    width: 100%;
-  }
 
-  .hebergements-cards {
-    justify-content: space-between; /* pour répartir les cards */
-  }
+.hébergements-cards {
+    display: flex;
+    gap: 30px;
+}
 
-  .card {
-    max-width: calc(33.33% - 20px); /* 3 cards par ligne avec espace */
-    flex-grow: 1;
-  }
+
+.hébergements-cards .card {
+
+    width: 220px;
+height: 230px;
+top: 622px;
+left: 56px;
+border-radius: 20px;
+padding-bottom: 15px;
+gap: 4px;
+
+}
+
+.card img {
+
+    width: 220px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-width: 5px;
+
+}
+
+
+
 
 
   /** LES PLUS POPULAIRES **/
@@ -653,9 +677,6 @@ a {
         gap: 15px;
         
         max-width: 100%;
-        
-
-
  
         border-radius: 20px;
  
