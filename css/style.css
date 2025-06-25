@@ -438,7 +438,7 @@ section.activitées-marseille  {
   display: flex;             /* Met le contenu en ligne */
   align-items: center;       /* Aligne au centre */
   gap: 15px;                 /* Espace entre image et texte */
-  padding: 10px;
+  padding: 4px;              /* marge interieur et a permis d'espacer les cards dans le format tablette*/
   width: 100%;
   max-width: 370px;          /* Ajustable */
   height: 146px;
@@ -598,21 +598,25 @@ a {
 
 .hébergements-cards {
     display: flex;
+    /*flex-wrap: wrap; /*ENLVER LE FLEX-WRAP pour laisser les cards s'aligner horizontalement sans retour a la ligne */
+    
     gap: 30px;
 }
 
 
 .hébergements-cards .card {
 
-    width: 220px;
-height: 230px;
+    width: 226px; /*ici mettre le meme width que .card img */ /* cette ligne a permis d'aligner 3 cards sur la meme ligne, ( a partir de 226px , 3 cards peuvent s'aligner au dela des 226px il y a que 2 cards qui peuvent s'aligner*/
+height: 230px; /*ici mettre le meme height que .card img */ 
 top: 622px;
 left: 56px;
 border-radius: 20px;
 padding-bottom: 15px;
-gap: 4px;
+
 
 }
+
+
 
 .card img {
 
@@ -636,16 +640,21 @@ gap: 4px;
     gap: 10px; /* ESPACE entre les cards */
   }
 
+ 
+
   .populaires-cards .card {
     max-width: 100%;
     width: 100%;
+    
+   
   }
 
+  .populaires-cards .card {
 
-
-
-
-
+  gap: 15px;                 /* Espace entre image et texte */
+  padding: 0;              /* marge interieur et a permis d'espacer les cards dans le format tablette*/
+  
+}
 
 
 
