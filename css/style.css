@@ -640,6 +640,11 @@ padding-bottom: 15px;
     gap: 10px; /* ESPACE entre les cards */
   }
 
+
+  .fa-chart-line:before, .fa-line-chart:before {
+    content: "\f201";
+    margin-left: 610px;
+  }
  
 
   .populaires-cards .card {
