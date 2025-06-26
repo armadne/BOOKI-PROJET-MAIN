@@ -5,6 +5,9 @@
 
 
 
+
+
+
 #logo {
 
 width: 121px;
@@ -63,10 +66,15 @@ li.hebergement
 
 }
 
+
+
+
+
+
 section#barre-recherche
 {
     display: flex;
-    width: 436px;
+    width: 400px;
     height: 49px;
     border-radius: 15px;
     border: 1px solid lightgrey;
@@ -78,16 +86,23 @@ section#barre-recherche
 
 }
 
-#recherche-btn
+
+.icone-rechercher {
+    display: none;
+    width: 6px;
+    height: 22px;
+}
+
+#recherche-button
 {
-    width: 132px;
-    height: 49px;
+    width: 150px;
+    height: 51px;
     padding-top: 15px;
     padding-right: 16px;
-    padding-bottom: 15px;
-    padding-left: 16px;
+    padding-bottom: 14px;
+    padding-left: 1px;
     gap: 10px;
-    margin-left: 40px;
+    
     margin-bottom: 80px;
     
     border-top-right-radius: 15px;
@@ -100,12 +115,39 @@ section#barre-recherche
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
+    
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+span.texte-rechercher
+{
+    width: 150px;
+    height: 51px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    gap: 10px;
+    margin-left: 8px;
+    margin-bottom: 80px;
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width: 1px;
+    background: #0065FC;
+
+    
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    
     text-align: center;
     color: #FFFFFF;
 
-
-;
 }
 
 input
@@ -786,6 +828,37 @@ border-radius: 20px;
 @media (max-width: 767.98px) {
     
 
+    /*
+    p.description
+
+{
+    width: 399px;
+    height: 52px;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+    
+}
+    */
+
+
+    .header-texte {
+    padding: 0 50px;   /* marges latérales comme pour les autres blocs */
+    margin-top: 20px;  /* un petit espacement en haut */
+}
+
+.header-texte h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
     
 #logo {
 
@@ -818,7 +891,7 @@ ul.onglets {
 ul.onglets li {
   width: 50%;
   text-align: center;
-  
+
   
 }
 
@@ -830,7 +903,6 @@ ul.onglets li {
   padding: 13px 0;
   font-size: 18px;
   color: black;
-  
 
 
 }
@@ -849,11 +921,63 @@ li.activite
 {
     
     padding: 10px;
-   
-
     
+
   }
 
+
+
+  section#barre-recherche {
+    width: 308px;
+height: 49px;
+border-radius: 15px;
+border-width: 1px;
+
+
+
+}
+
+
+
+img.icone-rechercher {
+  
+  background: #0065FC;
+
+    
+}
+
+#recherche-button {
+    width: 49px;
+height: 49px;
+left: 328px;
+border-radius: 15px;
+border-width: 1px;
+gap: 10px;
+padding-top: 15px;
+padding-right: 16px;
+padding-bottom: 15px;
+padding-left: 16px;
+background-color: #0065FC;
+
+    
+}
+
+.texte-rechercher {
+    display: none;
+}
+
+.icone-rechercher {
+    display: inline-block;
+    width: 17px;
+height: 17px;
+
+
+}
+
+
+
+
+  
 /*******************************************************/
 
 
