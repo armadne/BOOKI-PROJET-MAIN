@@ -796,40 +796,63 @@ margin-left: auto; /* POUR CENTRER */
 
 
     
-    /** BARRE DE NAV **/
+/********** BARRE DE NAV *************/
+
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #F2F2F2;
 }
 
 ul.onglets {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;  /* ← place un à gauche, l’autre à droite */
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-ul.onglets li a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    color: black;
-    padding-bottom: 10px;
-    border-bottom: 3px solid transparent;
-    transition: all 0.3s;
+ul.onglets li {
+  width: 50%;
+  text-align: center;
+  
+  
 }
+
+
+
+ ul.onglets li a {
+  display: block;            /* <== essentiel pour prendre toute la largeur du li */
+  width: 100%;               /* <== étend le lien sur tout le bouton */
+  padding: 13px 0;
+  font-size: 18px;
+  color: black;
+  
+
+
+}
+
+
 
 li:hover
 
 {
-    border-bottom: 2px #0065FC solid;
-    
+    border-top: none;
+    border-bottom: 3px solid #0065FC; /* ligne bleue sur tout le 50% */
 }
+
+li.hebergement,
+li.activite 
+{
+    
+    padding: 10px;
+   
+
+    
+  }
 
 /*******************************************************/
 
