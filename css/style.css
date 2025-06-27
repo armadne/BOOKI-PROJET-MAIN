@@ -66,6 +66,12 @@ li.hebergement
 
 }
 
+.header-title {
+    font-size: 22px;  /* Ajuste selon ton besoin, 22px est un bon début pour mobile */
+    font-weight: 700;
+    white-space: nowrap;    /* Évite le retour à la ligne */
+    max-width: 100%;        /* S'assure que ça reste dans le conteneur */
+}
 
 
 
@@ -98,9 +104,9 @@ section#barre-recherche
     width: 150px;
     height: 51px;
     padding-top: 15px;
-    padding-right: 16px;
+    padding-right: 8px;
     padding-bottom: 14px;
-    padding-left: 1px;
+    /*padding-left: 8px;*/
     gap: 10px;
     
     margin-bottom: 80px;
@@ -127,9 +133,9 @@ span.texte-rechercher
     width: 150px;
     height: 51px;
     padding-top: 15px;
-    padding-right: 16px;
+    padding-right: 10px;
     padding-bottom: 14px;
-    padding-left: 16px;
+    padding-left: 10px;
     gap: 10px;
     margin-left: 8px;
     margin-bottom: 80px;
@@ -253,7 +259,26 @@ section#categories
     height: 24px;
 }
 
+.info-logements {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre le cercle et le texte */
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
 
+.info-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #D9D9D9; /* gris clair */
+  border-radius: 50%; /* cercle parfait */
+  color: #0065FC; /* bleu comme dans ton image */
+  font-weight: bold;
+  font-size: 14px;
+}
 
 
 .card {
@@ -826,37 +851,11 @@ border-radius: 20px;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
-
-    /*
-    p.description
-
-{
-    width: 399px;
-    height: 52px;
-
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 100%;
-    letter-spacing: 0%;
+ 
 
 
     
-}
-    */
 
-
-    .header-texte {
-    padding: 0 50px;   /* marges latérales comme pour les autres blocs */
-    margin-top: 20px;  /* un petit espacement en haut */
-}
-
-.header-texte h1 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0;
-}
 
 
     
@@ -926,9 +925,32 @@ li.activite
   }
 
 
+.header-title {
+        width: 335px;
+        height: 52px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    
+  }
+
+  p {
+    width: 335px;
+    height: 19px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+  }
+
 
   section#barre-recherche {
-    width: 308px;
+    width: 580px;
 height: 49px;
 border-radius: 15px;
 border-width: 1px;
@@ -957,6 +979,7 @@ padding-top: 15px;
 padding-right: 16px;
 padding-bottom: 15px;
 padding-left: 16px;
+margin-left: 280px;
 background-color: #0065FC;
 
     
@@ -972,12 +995,32 @@ background-color: #0065FC;
 height: 17px;
 
 
+    background: #F2F2F2;
+    /* margin-top: 1px; */
+    /* width: 20px; */
+    
+   
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
 }
 
 
 
 
-  
+.button-category-wrapper {
+        width: 200px;
+
+        margin-left: 50px;
+        
+    }
+
+
+
+
+
+
 /*******************************************************/
 
 
