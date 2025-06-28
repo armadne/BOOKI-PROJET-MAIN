@@ -1037,7 +1037,7 @@ height: 17px;
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
-    order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille" */
+    order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille". */
   }
 
    .populaires-cards {
