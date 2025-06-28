@@ -420,13 +420,13 @@ section.activitées-marseille  {
 
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.hebergements-a-marseille {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.hebergements-and-populaires section {
+.hebergements-a-marseille section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -740,7 +740,7 @@ padding-bottom: 15px;
 
 
 
-    .hebergements-and-populaires {
+    .hebergements-a-marseille {
         flex-direction: column;
     }
 
@@ -853,10 +853,6 @@ border-radius: 20px;
 @media (max-width: 767.98px) {
  
 
-div.main-container {
-
-    flex-direction: column;
-}
 
 
 
@@ -1024,18 +1020,15 @@ height: 17px;
 
 
 
+  .hebergements-a-marseille {
+  display: flex;
+  flex-direction: column;
+}
 
+.hebergements {
+  order: 2; /* Hébergements passe en 2eme , les cards "hébergements à Marseille" sont positionnés après les cards "les plus populaires" */
+}
 
-
-/*******************************************************/
-
-
-
-
-
-      .hebergements-and-populaires {
-    flex-direction: column;
-  }
 
   
   .populaires {
@@ -1044,6 +1037,7 @@ height: 17px;
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
+    order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille" */
   }
 
    .populaires-cards {
