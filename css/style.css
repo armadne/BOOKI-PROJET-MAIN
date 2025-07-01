@@ -3,6 +3,7 @@
   font-family: "Raleway", sans-serif;
 }
 
+
 #logo {
   width: auto;
   height: auto;
@@ -13,9 +14,9 @@
 nav {
   display: flex;
   justify-content: space-between; /* Logo d’un côté, menu de l’autre */
-  align-items: center;
+  /*align-items: center;*/
   flex-wrap: wrap;  /* Si ça ne tient pas sur une ligne, ça revient à la ligne */
-   
+
 }
 
 ul {
@@ -24,6 +25,7 @@ ul {
   padding: 0; /* Cela enlève la marge intérieur par défaut que le navigateur applique autour de la liste */
   margin: 0; /* Cela enlève la marge extérieur par défaut que le navigateur applique autour de la liste */
   list-style: none;
+
 }
 
 
@@ -31,12 +33,14 @@ li
 {
     
     padding: 10px 0px; /* marge intérieur droite et gauche 10px , marge intérieur haut et bas à 0px*/
+
 }
 
 
 li:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
+
 }
 
 
@@ -698,26 +702,51 @@ footer .assistance-footer {
     margin-left: auto; /* POUR CENTRER */
   }
 
-/* MOBILE : jusqu'à 767.98px */
-@media (max-width: 767.98px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
+  
+    ul {
+    display: flex;
+    justify-content: center; /* centre l’ensemble des li dans le ul */
+    gap: 10px; /* espace entre Hébergements et Activités */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+
+    li {
+        width: 50%; /* chaque li prend 50% de la largeur du parent ( de la balise ul), soit la moitié de la ligne */
+        text-align: center; /* centre le texte dans le li*/ 
+        padding: 10px; /* marge interieur haut, droite , bas , gauche */
+    }
+
 
   nav ul {
-    flex-direction: column;
+    /*flex-direction: column;*/
     gap: 10px;
     width: 100%;
+   
+    
   }
+
+
+  li:hover {
+    border-top: none;
+  border-bottom: 2px #0065fc solid;
+  color: #0065fc;
+
+}
 
   li {
-    padding: 8px 0;
+    
     width: 100%;
+  
   }
 
+
+
   section#barre-recherche {
-    flex-direction: column;
+    display: flex;
+    /*flex-direction: column;*/
     align-items: stretch;
     gap: 8px;
   }
@@ -763,7 +792,7 @@ footer .assistance-footer {
     align-items: flex-start;
     gap: 5px;
   }
-}
+
 
 
   .hebergements-a-marseille {
@@ -857,7 +886,6 @@ footer .assistance-footer {
     max-width: 375px;
   }
 
-  @media (max-width: 767.98px) {
     section#barre-recherche {
       width: 100%;
       max-width: 375px;
@@ -893,7 +921,7 @@ footer .assistance-footer {
       max-width: 375px;
     }
   }
-}
+
 
 div.propos_footer {
   display: flex;
