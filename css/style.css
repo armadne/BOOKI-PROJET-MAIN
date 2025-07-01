@@ -177,6 +177,7 @@ input {
   align-items: center;
   gap: 8px; /* Espace entre l'icône et le texte */
   padding: 10px 16px;
+  
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   background-color: #fff;
