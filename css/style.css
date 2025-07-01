@@ -756,19 +756,25 @@ footer .assistance-footer {
 }
 
   section#barre-recherche {
-      width: 100%;
-      max-width: 100%;
+      width: 377px;
+      margin-left: auto; /* POUR CENTRER verticalement */
+      margin-right: auto; /* POUR CENTRER verticalement */
+      
       gap: 10px;
     }
 
     #recherche-button {
       margin-left: 0;
       padding: 0;
-      width: 60px;
+      width: 75px;
       height: 50px;
     }
 
-
+    input::placeholder
+    {
+       font-weight:bolder;
+       font-family: "Raleway";
+    }
 
     input {
         width: 100%;
@@ -785,19 +791,21 @@ footer .assistance-footer {
 
 
     .button-category-wrapper {
-         display: flex;
-  flex-wrap: wrap; /* permet de passer à la ligne si nécessaire */
-  gap: 10px; /* espace entre les boutons (facultatif) */
+        display: flex;
+        flex-wrap: wrap; /* permet de passer à la ligne si nécessaire */
+        gap: 10px; /* espace entre les boutons (facultatif) */
+    
     }
 
 
     .button-category {
        flex: 1 1 45%; /* chaque bouton prend ~45% pour laisser un peu d’espace (gap) */
-      min-width: 100px; /* optionnel : évite que le bouton soit trop petit */
-      
-    display: flex;
-    align-items: center;    /* centre verticalement */
-    justify-content: center; /* centre horizontalement */
+      min-width: 100px; /* optionnel : évite que le bouton soit trop petit  et évite que les boutons repassent en colonne lors de la reduction de l'ecran en dessous de 767px */
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;    /* centre verticalement */
+      justify-content: center; /* centre horizontalement */
   
     }
 
