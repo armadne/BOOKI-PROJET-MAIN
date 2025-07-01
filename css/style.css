@@ -713,6 +713,8 @@ footer .assistance-footer {
     list-style: none;
     }
 
+
+
     li {
         width: 50%; /* chaque li prend 50% de la largeur du parent ( de la balise ul), soit la moitié de la ligne */
         text-align: center; /* centre le texte dans le li*/ 
@@ -742,185 +744,176 @@ footer .assistance-footer {
   
   }
 
+  /* BARRE DE RECHERCHE */
 
 
-  section#barre-recherche {
-    display: flex;
-    /*flex-direction: column;*/
-    align-items: stretch;
-    gap: 8px;
-  }
+.icone-rechercher {
+  display: flex;
+  width: 18px;
+  height: 18px;
 
-  input {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  #recherche-button {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .texte-rechercher {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  section#categories {
-    flex-direction: column;
-  }
-
-  .button-category-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .button-category {
-    width: 100%;
-    justify-content: center;
-    font-size: 15px;
-    padding: 8px 10px;
-  }
-
-  .icones-categories {
-    width: 18px;
-    height: 18px;
-  }
-
-  .info-logements {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-  }
-
-
-
-  .hebergements-a-marseille {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hebergements {
-    order: 2; /* Hébergements passe en 2eme , les cards "hébergements à Marseille" sont positionnés après les cards "les plus populaires" */
-  }
-
-  /*
-.hébergements-cards .card
-{
-    width: 500px;;
-    height: 220px;
-    border-radius: 20px;
-    gap: 4px;
-    padding-bottom: 15px;
 }
 
-*/
-
-  .hébergements-cards img {
-    width: 100%;
-    object-fit: cover;
-    height: 124px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-width: 5px;
-  }
-
-  .populaires {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    box-sizing: border-box;
-    order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille". */
-  }
-
-  .populaires-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .populaires-cards a {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /*
-    .populaires-cards .card {
-
-    width: 355px;
-    height: 146px;
-    top: 782px;
-    margin-right: 500px;
-    border-radius: 20px;
-
-  }
-
-  */
-
-  .activite-marseille {
-    flex-direction: column;
-  }
-
-  .card-activite-marseille {
-    width: 500px;
-    border-radius: 20px;
-  }
-
-  .card-activite-marseille img {
-    object-fit: cover;
-    width: 315px;
-    height: 141px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  /* Footer : colonne */
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer > div {
-    width: 100%;
-    max-width: 375px;
-  }
-
-    section#barre-recherche {
+  section#barre-recherche {
       width: 100%;
-      max-width: 375px;
+      max-width: 100%;
       gap: 10px;
     }
 
     #recherche-button {
       margin-left: 0;
       padding: 0;
-      width: 49px;
-      height: 49px;
+      width: 60px;
+      height: 50px;
     }
 
-    .hébergements-cards .card,
+
+
+    input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    .texte-rechercher {
+        display: none;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    section#categories {
+        flex-direction: column;
+    }
+
+    .button-category-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-category {
+        width: 100%;
+        justify-content: center;
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+
+    .icones-categories {
+        width: 18px;
+        height: 18px;
+    }
+
+    .info-logements {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+
+
+    .hebergements-a-marseille {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements {
+        order: 2; /* Hébergements passe en 2eme , les cards "hébergements à Marseille" sont positionnés après les cards "les plus populaires" */
+    }
+
+
+
+    .hébergements-cards img {
+        width: 100%;
+        object-fit: cover;
+        height: 124px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-width: 5px;
+    }
+
+    .populaires {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+        order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille". */
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /*
+        .populaires-cards .card {
+
+        width: 355px;
+        height: 146px;
+        top: 782px;
+        margin-right: 500px;
+        border-radius: 20px;
+
+    }
+
+    */
+
+    .activite-marseille {
+        flex-direction: column;
+    }
+
     .card-activite-marseille {
-      width: 100%;
-      max-width: 355px;
-      margin: 10px auto;
+        width: 500px;
+        border-radius: 20px;
     }
 
-    .populaires-cards .card {
-      width: 100%;
-      max-width: 355px;
+    .card-activite-marseille img {
+        object-fit: cover;
+        width: 315px;
+        height: 141px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
+    /* Footer : colonne */
     footer {
-      flex-direction: column;
-      align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     footer > div {
-      width: 100%;
-      max-width: 375px;
+        width: 100%;
+        max-width: 375px;
     }
-  }
+
+    
+        .hébergements-cards .card,
+        .card-activite-marseille {
+        width: 100%;
+        max-width: 355px;
+        margin: 10px auto;
+        }
+
+        .populaires-cards .card {
+        width: 100%;
+        max-width: 355px;
+        }
+
+        footer {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        footer > div {
+        width: 100%;
+        max-width: 375px;
+        }
+    }
 
 
 div.propos_footer {
