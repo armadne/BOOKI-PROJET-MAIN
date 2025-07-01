@@ -40,19 +40,6 @@ li:hover {
 }
 
 
-/*******  MODIF RESPONSIVE ************/
-
-
-
-
-
-
-
-
-
-
-
-
 .header-title {
   font-size: 22px; /* Ajuste selon ton besoin, 22px est un bon début pour mobile */
   font-weight: 700;
@@ -63,80 +50,66 @@ li:hover {
 
 
 
-
-section#barre-recherche
-{
-    display: flex;
-    width: 400px;
-    height: 49px;
-    border-radius: 15px;
-    border: 1px solid lightgrey;
-    gap: 24px;
-    border-width: 1px;
-    /*padding-left: 1px;*/
-   
-    
-
+/* BARRE DE RECHERCHE */
+section#barre-recherche {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espace entre les éléments */
+  
+  border-radius: 15px;
+  padding: 5px;
+  max-width: 100%; /* évite de dépasser sur mobile */
 }
 
 .icone-rechercher {
   display: none;
   width: 6px;
   height: 22px;
+
+
+    /*display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;*/
 }
+
+
+
+
 
 #recherche-button {
-  width: 150px;
-  height: 51px;
-  padding-top: 15px;
-  padding-right: 8px;
-  padding-bottom: 14px;
-  /*padding-left: 8px;*/
-  gap: 10px;
-
-  margin-bottom: 80px;
-
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-width: 1px;
-  background: #0065fc;
-
-  font-family: Raleway;
+    background-color: #0065fc;
+  color: #fff;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
-
-  text-align: center;
-  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-span.texte-rechercher {
-  width: 150px;
-  height: 51px;
-  padding-top: 15px;
-  padding-right: 10px;
-  padding-bottom: 14px;
-  padding-left: 10px;
-  gap: 10px;
-  margin-left: 8px;
-  margin-bottom: 80px;
-
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-width: 1px;
+.texte-rechercher {
+ /* Inutile de fixer width/height si tu laisses le padding gérer l’espace */
+  padding: 10px;
+  border-radius: 15px;
   background: #0065fc;
-
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
-
+  color: #fff;
   text-align: center;
-  color: #ffffff;
 }
 
 input {
-  border: none;
+    border: none;
+  outline: none; /* Ajoute ça pour retirer le contour bleu sur focus si besoin */
+  font-family: inherit;
+  font-size: 16px;
 }
 
 #cadre-icone-position {
@@ -161,62 +134,73 @@ input {
   border-bottom-left-radius: 15px;
 }
 
+#cadre-icone-position {
+
+  background: #f2f2f2;
+  padding: 10px; 
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 #icon-position {
-  border: 1px solid black;
-  width: 50px;
-  height: 49px;
-  /*margin-left: 50px;*/
+  object-fit: contain;
+  border: none; /* Plus de bordure noire inutile */
 }
 
 section#categories {
   display: flex;
+    flex-wrap: wrap;
+  gap: 10px;
+
 }
 
-.button-category-wrapper:hover {
-  background-color: #d0e7ff; /* Blue/Light */
-  transition: 0.2s ease-in-out;
-}
 
 .button-category-wrapper {
-  display: inline-block;
-  border: 2px solid #d9d9d9; /* Bordure violette pointillée */
-  border-radius: 25px;
-  padding: 2px; /* Pour espacer légèrement le bouton de la bordure */
-  margin-right: 10px;
-  margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.button-category:hover {
-  background-color: #d0e7ff; /* Blue/Light */
-  transition: 0.2s ease-in-out;
-}
 
 .button-category {
-  display: flex;
+
+    display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: white;
-  border: none;
+  gap: 8px; /* Espace entre l'icône et le texte */
+  padding: 10px 16px;
+  border: 2px solid #d9d9d9;
   border-radius: 25px;
-  padding: 8px 16px;
+  background-color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: black;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.button-category:hover {
+  background-color: #d0e7ff; /* Bleu clair au survol */
 }
 
 .icones-categories {
   width: 24px;
   height: 24px;
+  
 }
 
 .info-logements {
   display: flex;
   align-items: center;
-  gap: 10px; /* espace entre le cercle et le texte */
-  font-family: "Raleway", sans-serif;
+  gap: 10px;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
+
 }
 
 .info-icon {
@@ -225,12 +209,23 @@ section#categories {
   align-items: center;
   width: 24px;
   height: 24px;
-  border: 1px solid #d9d9d9; /* gris clair */
-  border-radius: 50%; /* cercle parfait */
-  color: #0065fc; /* bleu comme dans ton image */
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  color: #0065fc;
   font-weight: bold;
   font-size: 14px;
 }
+
+
+
+
+
+/*******  MODIF RESPONSIVE ************/
+
+
+
+
+
 
 .card {
   /*background-color: white;
@@ -524,29 +519,44 @@ footer .assistance-footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  /** BARRE DE NAV **/
- /* nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }*/
+/* TABLETTE : jusqu'à 1024px */
+@media (max-width: 1024px)
 
- /* ul {
-    /*margin-left: 330px;*/
-    /*gap: 0px;*/
-  
+/**** HEADER ******/
 
-
-/*
-  li.hebergement,
-  li.activite {
-    margin-top: 30;
-    padding: 20px;
-    width: auto;
+{
+  nav ul {
+    gap: 20px; /* Réduit l'espace entre les onglets */
   }
 
-  */
+  .header-title {
+    font-size: 20px;
+  }
+
+  .button-category {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .icones-categories {
+    width: 20px;
+    height: 20px;
+  }
+
+  #recherche-button {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .texte-rechercher {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+
+  /****************/
+
+
 
   /** HEBERGEMENT MARSEILLE **/
 
@@ -688,114 +698,72 @@ footer .assistance-footer {
     margin-left: auto; /* POUR CENTRER */
   }
 
-  /********** BARRE DE NAV *************/
-
+/* MOBILE : jusqu'à 767.98px */
+@media (max-width: 767.98px) {
   nav {
- 
     flex-direction: column;
- 
+    align-items: flex-start;
   }
- 
-  ul
-{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-}
 
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 
   li {
+    padding: 8px 0;
     width: 100%;
-    text-align: center;
   }
-
-
-  li:hover {
-    border-top: none;
-    border-bottom: 3px solid #0065fc; /* ligne bleue sur tout le 50% */
-  }
-
- /********************************************/
-
-
-.header-title {
-        width: 335px;
-        height: 52px;
-        font-family: Raleway;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 100%;
-        letter-spacing: 0%;
-    
-  }
-
-  p {
-    
-    font-family: Raleway;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-
-
-  }
-
 
   section#barre-recherche {
-    width: 580px;
-height: 49px;
-border-radius: 15px;
-border-width: 1px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
 
-
-
-}
-
-
-
-  img.icone-rechercher {
-    background: #0065fc;
+  input {
+    width: 100%;
+    font-size: 14px;
   }
 
   #recherche-button {
-    width: 49px;
-    height: 49px;
-    left: 328px;
-    border-radius: 15px;
-    border-width: 1px;
-    gap: 10px;
-    padding-top: 15px;
-    padding-right: 16px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    margin-left: 280px;
-    background-color: #0065fc;
+    width: 100%;
+    justify-content: center;
   }
 
   .texte-rechercher {
-    display: none;
+    width: 100%;
+    font-size: 14px;
   }
 
-  .icone-rechercher {
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-
-    background: #f2f2f2;
-    /* margin-top: 1px; 
-     width: 20px; */
-
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  section#categories {
+    flex-direction: column;
   }
 
   .button-category-wrapper {
-    width: 200px;
-
-    margin-left: 50px;
+    flex-direction: column;
+    align-items: stretch;
   }
 
+  .button-category {
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+
+  .icones-categories {
+    width: 18px;
+    height: 18px;
+  }
+
+  .info-logements {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
 
 
   .hebergements-a-marseille {
