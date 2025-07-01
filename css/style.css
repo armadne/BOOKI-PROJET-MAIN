@@ -61,14 +61,22 @@ li:hover {
 }
 
 
-section#barre-recherche {  
+
+
+
+section#barre-recherche
+{
     display: flex;
-  align-items: center;
-  gap: 10px; /* espace entre les éléments */
-  border: 1px solid lightgrey;
-  border-radius: 15px;
-  padding: 5px;
-  max-width: 100%; /* évite de dépasser sur mobile */
+    width: 400px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    gap: 24px;
+    border-width: 1px;
+    /*padding-left: 1px;*/
+   
+    
+
 }
 
 .icone-rechercher {
@@ -711,13 +719,15 @@ footer .assistance-footer {
  /********************************************/
 
 
-  .header-title {
-
-    font-family: Raleway;
-    font-weight: 700; /* texte en gras */
-    font-size: 22px;
-     line-height: 1.2; /* Espacement vertical entre les lignes */
-    max-width: 100%; /* Prend toute la largeu */
+.header-title {
+        width: 335px;
+        height: 52px;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    
   }
 
   p {
@@ -725,23 +735,24 @@ footer .assistance-footer {
     font-family: Raleway;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.4; /*espacement vertical entre le .header-title et le p */
-    max-width: 100%;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
   }
 
 
+  section#barre-recherche {
+    width: 580px;
+height: 49px;
+border-radius: 15px;
+border-width: 1px;
 
 
-/* BARRE DE RECHERCHE */
-section#barre-recherche {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* espace entre les éléments */
-  border: 1px solid lightgrey;
-  border-radius: 15px;
-  padding: 5px;
-  max-width: 100%; /* évite de dépasser sur mobile */
+
 }
+
+
 
   img.icone-rechercher {
     background: #0065fc;
@@ -786,9 +797,6 @@ section#barre-recherche {
   }
 
 
-
-
-  
 
   .hebergements-a-marseille {
     display: flex;
