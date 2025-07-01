@@ -155,12 +155,13 @@ input {
   border: none; /* Plus de bordure noire inutile */
 }
 
-section#categories {
-  display: flex;
-    flex-wrap: wrap;
-  gap: 10px;
+#filtres
 
+{
+    font-weight: 700;
 }
+
+
 
 
 .button-category-wrapper {
@@ -781,21 +782,25 @@ footer .assistance-footer {
         font-size: 14px;
     }
 
-    section#categories {
-        flex-direction: column;
-    }
+
 
     .button-category-wrapper {
-        flex-direction: column;
-        align-items: stretch;
+         display: flex;
+  flex-wrap: wrap; /* permet de passer à la ligne si nécessaire */
+  gap: 10px; /* espace entre les boutons (facultatif) */
     }
 
+
     .button-category {
-        width: 100%;
-        justify-content: center;
-        font-size: 15px;
-        padding: 8px 10px;
+       flex: 1 1 45%; /* chaque bouton prend ~45% pour laisser un peu d’espace (gap) */
+      min-width: 100px; /* optionnel : évite que le bouton soit trop petit */
+      
+    display: flex;
+    align-items: center;    /* centre verticalement */
+    justify-content: center; /* centre horizontalement */
+  
     }
+
 
     .icones-categories {
         width: 18px;
@@ -803,10 +808,13 @@ footer .assistance-footer {
     }
 
     .info-logements {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        padding: 15px;
+        display: flex;
+        gap: 15px;
     }
+
+
+    /****************FIN DU HEADER RESPONSIVE SMARTPHONE************************/
 
 
 
