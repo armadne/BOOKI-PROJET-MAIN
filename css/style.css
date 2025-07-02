@@ -231,14 +231,8 @@ input {
 
 
 
-
-
 .card {
-  /*background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;*/ /*AJT*/
+
 
   background: #ffffff;
 
@@ -251,11 +245,15 @@ input {
   gap: 4px;
 }
 
+
+
+
+
 .card img {
   width: 243px;
   height: 124px;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /*border-top-right-radius: 20px;*/
   border-width: 5px;
   /*
     object-fit: cover;
@@ -364,6 +362,16 @@ section.activitées-marseille {
   font-family: Raleway, sans-serif;
 }
 
+
+
+
+
+
+
+
+
+/****** Populaires ***********/
+
 /****** Populaires ***********/
 .populaires {
   width: 30%;
@@ -440,6 +448,19 @@ section.activitées-marseille {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+
+
+/*************************************************************/
+
+
+
+
+
+
+
+
+
+
 
 :root {
   --main-color: #0065fc;
@@ -586,7 +607,7 @@ footer .assistance-footer {
     width: 220px;
     height: 124px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /*border-top-right-radius: 20px;*/
     border-width: 5px;
   }
 
@@ -602,7 +623,7 @@ footer .assistance-footer {
   .fa-line-chart:before {
     /* ICONE BLEUE GRAPHIQUE */
     content: "\f201";
-    margin-left: 610px;
+    margin-left: 524px;
   }
 
   .populaires-cards .card {
@@ -611,8 +632,8 @@ footer .assistance-footer {
   }
 
   .populaires-cards .card {
-    gap: 15px; /* Espace entre image et texte */
-    padding: 0; /* marge interieur et a permis d'espacer les cards dans le format tablette*/
+    gap: 8px; /* Espace entre image et texte */
+    padding: 5px; /* marge interieur et a permis d'espacer les cards dans le format tablette*/
   }
 
   .hebergements-a-marseille {
@@ -624,7 +645,7 @@ footer .assistance-footer {
   }
 
   .populaires {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     margin-top: 50px;
     display: flex;
@@ -635,7 +656,7 @@ footer .assistance-footer {
     display: flex;
     flex-direction: row;
 
-    gap: 15px;
+    gap: 27px;
 
     max-width: 100%;
 
@@ -801,7 +822,7 @@ footer .assistance-footer {
 
     .button-category {
        flex: 1 1 45%; /* chaque bouton prend ~45% pour laisser un peu d’espace (gap) */
-      min-width: 100px; /* optionnel : évite que le bouton soit trop petit  et évite que les boutons repassent en colonne lors de la reduction de l'ecran en dessous de 767px */
+      min-width: 0; /* ou mettre a 100px optionnel : évite que le bouton soit trop petit  et évite que les boutons repassent en colonne lors de la reduction de l'ecran en dessous de 767px */
       margin-left: auto;
       margin-right: auto;
       display: flex;
