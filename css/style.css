@@ -3,6 +3,13 @@
   font-family: "Raleway", sans-serif;
 }
 
+html, body {
+  margin: 0; /* Supprime les marges extérieures sur les 4 côtés (haut, bas, gauche, droite) */
+/* Cette règle permet de coller les onglets "Hébergements" et "Activités" tout en haut de l’écran */
+
+  padding: 0; /*enlever les marges exterieurs des 4 cotés */
+}
+
 
 #logo {
   width: auto;
@@ -16,6 +23,7 @@ nav {
   justify-content: space-between; /* Logo d’un côté, menu de l’autre */
   /*align-items: center;*/
   flex-wrap: wrap;  /* Si ça ne tient pas sur une ligne, ça revient à la ligne */
+  align-items: flex-start;
 
 }
 
@@ -32,13 +40,13 @@ ul {
 li
 {
     
-    padding: 10px 0px; /* marge intérieur droite et gauche 10px , marge intérieur haut et bas à 0px*/
+    padding: 10px 5px; /* marge intérieur droite et gauche 10px , marge intérieur haut et bas à 0px*/    
 
 }
 
 
 li:hover {
-  border-top: 2px #0065fc solid;
+  border-top: 3px #0065fc solid;
   color: #0065fc;
 
 }
