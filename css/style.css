@@ -764,6 +764,10 @@ header {
         padding: 0;
     }
 
+    header {
+        padding: 0;
+    }
+
   #logo {
     margin-right: auto; /* POUR CENTRER */
     margin-left: auto; /* POUR CENTRER */
