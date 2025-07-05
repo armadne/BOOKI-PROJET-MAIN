@@ -768,6 +768,19 @@ header {
         padding: 0;
     }
 
+    .header-texte {
+  box-sizing: border-box; /* que le padding ne fasse pas déborder */
+  max-width: 100%;
+  padding: 0 10px; /* un petit padding si tu veux, mais pas énorme */
+}
+h1.header-title {
+  width: 100%;
+  white-space: normal; /* assure que le texte peut aller à la ligne */
+  word-break: break-word; /* au cas où */
+}
+
+
+
   #logo {
     margin-right: auto; /* POUR CENTRER */
     margin-left: auto; /* POUR CENTRER */
