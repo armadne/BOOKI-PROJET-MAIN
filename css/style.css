@@ -768,16 +768,19 @@ header {
         padding: 0;
     }
 
-    .header-texte {
-  box-sizing: border-box; /* que le padding ne fasse pas déborder */
-  max-width: 100%;
-  padding: 0 10px; /* un petit padding si tu veux, mais pas énorme */
+  .header-texte {
+  box-sizing: border-box; /* Le padding et la bordure sont inclus dans la largeur définie, cela évite que l'élément déborde. */
+  max-width: 100%; /* L'élément ne dépassera pas la largeur de son conteneur parent. */
+  padding: 0 10px; /* Ajoute un espace de 10px à gauche et à droite pour éviter que le texte touche les bords et 0px en haut et en bas (pas d'espace en haut et en bas) */
 }
+
 h1.header-title {
-  width: 100%;
-  white-space: normal; /* assure que le texte peut aller à la ligne */
-  word-break: break-word; /* au cas où */
+  width: 100%; /* Le titre prend toute la largeur disponible de son conteneur. */
+  white-space: normal; /* Autorise le retour à la ligne automatique (empêche le texte de rester sur une seule ligne)  (*alternative de flex-wrap: wrap; ) */
+  word-break: break-word; /* Si un mot est trop long, il peut être coupé et passer à la ligne suivante pour éviter le débordement. (*alternative de flex-wrap: wrap; )  */
 }
+
+
 
 
 
