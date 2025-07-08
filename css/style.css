@@ -277,7 +277,7 @@ input {
     height: 19px;*/
 }
 
-.hébergements-cards {
+.hebergements-cards {
   display: flex; /*mettre les element en ligne */
   flex-wrap: wrap; /* si sa dépasse : revenir a la ligne et continuer d'afficher les élements en ligne */
   gap: 25px;
@@ -350,6 +350,15 @@ section.activitees-marseille {
   padding: 30px;
   box-sizing: border-box;
   padding-bottom: 22px;
+  display: inline-grid;
+}
+
+.les-plus-populaires {
+background-color: #f2f2f2;
+    /* border-radius: 20px; */
+    padding: 30px;
+    box-sizing: border-box;
+    padding-bottom: 22px;
 }
 
 /****** Hebergements ***********/
@@ -392,7 +401,7 @@ section.activitees-marseille {
 .fa-chart-line:before,
 .fa-line-chart:before {
   content: "\f201";
-  margin-left: 130px;
+  width: 100%;
 }
 
 .populaires article {
@@ -603,14 +612,14 @@ header {
 
   /** HEBERGEMENT MARSEILLE **/
 
-  .hébergements-cards {
+  .hebergements-cards {
     display: flex;
     /*flex-wrap: wrap; /*ENLVER LE FLEX-WRAP pour laisser les cards s'aligner horizontalement sans retour a la ligne */
 
     gap: 30px;
   }
 
-  .hébergements-cards .card {
+  .hebergements-cards .card {
     width: 226px; /*ici mettre le meme width que .card img */ /* cette ligne a permis d'aligner 3 cards sur la meme ligne, ( a partir de 226px , 3 cards peuvent s'aligner au dela des 226px il y a que 2 cards qui peuvent s'aligner*/
     height: 230px; /*ici mettre le meme height que .card img */
     top: 622px;
@@ -639,7 +648,7 @@ header {
   .fa-line-chart:before {
     /* ICONE BLEUE GRAPHIQUE */
     content: "\f201";
-    margin-left: 524px;
+   width: 100%;
   }
 
   .populaires-cards .card {
@@ -743,7 +752,7 @@ header {
   }
 
   .card-activite-marseille img {
-    width: 193px;
+    width: 210px;
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -911,6 +920,10 @@ h1.header-title {
     /****************FIN DU HEADER RESPONSIVE SMARTPHONE************************/
 
 
+    section.hebergements
+    {
+        background-color: white;
+    }
 
     .hebergements-a-marseille {
         display: flex;
@@ -923,13 +936,18 @@ h1.header-title {
 
 
 
-    .hébergements-cards img {
+    .hebergements-cards img {
         width: 100%;
         object-fit: cover;
         height: 124px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-width: 5px;
+    }
+
+    .les-plus-populaires
+    {
+        background-color: none;
     }
 
     .populaires {
@@ -939,6 +957,7 @@ h1.header-title {
         padding: 0 10px;
         box-sizing: border-box;
         order: 1; /* Populaires passe en 1er,  les cards "les plus populaires" sont positionnés avant les cards "hébergements à Marseille". */
+       display: inline-grid;
     }
 
     .populaires-cards {
@@ -951,18 +970,7 @@ h1.header-title {
         max-width: 100%;
     }
 
-    /*
-        .populaires-cards .card {
 
-        width: 355px;
-        height: 146px;
-        top: 782px;
-        margin-right: 500px;
-        border-radius: 20px;
-
-    }
-
-    */
 
     .activites-cards {
     display: flex;
@@ -970,11 +978,12 @@ h1.header-title {
     flex-direction: column-reverse;
     }
 
-    /*
-    .activite-marseille {
-        flex-direction: column;
+
+    .hebergements-a-marseille section {
+
+        background-color: none;
     }
-        */
+
 
     
 
@@ -993,9 +1002,9 @@ h1.header-title {
 
 
         
-        .hébergements-cards .card {
+        .hebergements-cards .card {
         width: 100%;
-       
+       box-shadow: 0px 3px 15px 0px #0000001a;
         margin: 10px auto;
         }
 
