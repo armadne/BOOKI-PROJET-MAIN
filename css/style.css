@@ -722,13 +722,18 @@ header {
     margin-bottom: 50px;
   }
 
+  .activitees-marseille .card-title {
+    margin: 5px;
+    padding: 5px;
+
+  }
+
   .card-activite-marseille{
 
     width: 100%;
       justify-content: space-between;
     /* margin-bottom: 100px; */
     height: 270px;
-   
    
     
   }
