@@ -269,8 +269,15 @@ input {
   /*height: 44px; */ /*AJT*/
 }
 
-.card-title {
+.card-title
+{
+    font-size: 16px;
+}
+
+.activites-cards .card-title {
   font-size: 16px;
+      margin: 5px;
+    padding: 5px;
 
   /*
     width: 21x;
