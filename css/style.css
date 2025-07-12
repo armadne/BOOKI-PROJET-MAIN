@@ -512,6 +512,7 @@ a {
   margin: 0;
   font-size: 22px;
   white-space: nowrap; /* Pour afficher les h2 sur une ligne */
+    
 }
 
 .euro {
@@ -572,7 +573,7 @@ footer .assistance-footer {
 
 header {
 
-  padding-left: 50px; /* ou un margin si vraiment tu veux */
+  padding-left: 50px; 
 }
 
 
@@ -789,7 +790,16 @@ h1.header-title {
 }
 
 
+.populaires-title {
+    margin-top: 10px;
+    padding: 0 6px;
+}
 
+.hebergements-title
+{
+            margin-top: 30px;
+        padding: 0px 22px;
+    }
 
 
   #logo {
@@ -950,8 +960,8 @@ h1.header-title {
  {
     width: 100%;
    margin: 10px auto;
-    padding: 0;
-    border-radius: 25px; /* si tu veux que ce soit bord à bord */
+    /*padding: 6px;*/
+    border-radius: 20px; /* si tu veux que ce soit bord à bord */
     box-shadow: 0px 3px 15px 0px #0000001a;
 }
         
@@ -961,6 +971,7 @@ h1.header-title {
         .hebergements-cards {
             flex-direction: column;
             box-sizing: border-box;
+             padding: 0 10px; /* espace à droite et à gauche */
            
 }
 
