@@ -262,6 +262,7 @@ input {
   border-top-left-radius: 20px;
   /*border-top-right-radius: 20px;*/
   border-width: 5px;
+  object-fit: cover;
   /*
     object-fit: cover;
     width: 43px; /*AJT*/
@@ -631,8 +632,10 @@ header {
   .card img {
     width: 220px;
     height: 124px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     /*border-top-right-radius: 20px;*/
+    object-fit: cover;
     border-width: 5px;
   }
 
