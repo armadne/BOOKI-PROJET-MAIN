@@ -624,20 +624,19 @@ header {
     display: flex;
     /*flex-wrap: wrap; /*ENLVER LE FLEX-WRAP pour laisser les cards s'aligner horizontalement sans retour a la ligne */
 
-    gap: 30px;
+    gap: 45px;
   }
 
   .hebergements-cards .card {
-    width: 226px; /*ici mettre le meme width que .card img */ /* cette ligne a permis d'aligner 3 cards sur la meme ligne, ( a partir de 226px , 3 cards peuvent s'aligner au dela des 226px il y a que 2 cards qui peuvent s'aligner*/
+    width: 251px; /*ici mettre le meme width que .card img */ /* cette ligne a permis d'aligner 3 cards sur la meme ligne, ( a partir de 226px , 3 cards peuvent s'aligner au dela des 226px il y a que 2 cards qui peuvent s'aligner*/
     height: 230px; /*ici mettre le meme height que .card img */
-    top: 622px;
-    left: 56px;
+
     border-radius: 20px;
     padding-bottom: 15px;
   }
 
   .card img {
-    width: 220px;
+    width: 252px;
     height: 124px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -675,6 +674,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+  }
+
+  .hebergements-a-marseille section {
+
+      width: 100%;
 
   }
 
@@ -1022,6 +1027,7 @@ h1.header-title {
     .populaires-cards {
         flex-direction: column;
         align-items: center;
+        padding-right: 16px;
     }
 
     .populaires-cards a {
