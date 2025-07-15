@@ -7,6 +7,9 @@ html, body {
   margin: 0; /* Supprime les marges extérieures sur les 4 côtés (haut, bas, gauche, droite) */
 /* Cette règle permet de coller les onglets "Hébergements" et "Activités" tout en haut de l’écran */
 
+
+  scroll-behavior: smooth;
+
   padding: 0; /*enlever les marges exterieurs des 4 cotés */
 }
 
