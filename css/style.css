@@ -50,6 +50,8 @@ li:hover {
   max-width: 100%;
 }
 
+
+
 /* BARRE DE RECHERCHE */
 section#barre-recherche {
   display: flex;
@@ -59,6 +61,11 @@ section#barre-recherche {
   border-radius: 15px;
   padding: 5px;
   max-width: 100%;
+}
+
+h2.visually-hidden
+{
+    display: none;
 }
 
 .icone-rechercher {
@@ -630,7 +637,7 @@ footer .assistance-footer {
   }
 
   .card-activite-marseille img {
-    width: 210px;
+    width: 211px;
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
