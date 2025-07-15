@@ -228,6 +228,14 @@ input {
   margin-top: 36px;
 }
 
+
+.activites-wrapper {
+  /*max-width: 1119px; *//* ou 960px pour encore plus étroit */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ 
+
 .card-activite-marseille {
   width: 308px;
   height: 439px;
@@ -240,6 +248,8 @@ input {
 }
 
 .card-activite-marseille img {
+    object-fit: cover;
+
   width: 308px;
   height: 380px;
   border-top-left-radius: 20px;
@@ -247,6 +257,10 @@ input {
 }
 
 /***** ACTIVITES ****/
+
+
+
+
 
 .activites-marseille {
   display: flex;
@@ -612,11 +626,18 @@ footer .assistance-footer {
     font-size: 13px;
   }
 
+    .activites-wrapper {
+  max-width: 875px;
+  margin: 0 auto;
+  padding: 0 0px; /* un peu de respiration sur les côtés */
+}
+
   .activite-marseille {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
   }
+
 
   section.activites-marseille .card-title {
     margin: 5px;
@@ -637,7 +658,7 @@ footer .assistance-footer {
   }
 
   .card-activite-marseille img {
-    width: 211px;
+    width: 205px;
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
