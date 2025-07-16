@@ -755,7 +755,7 @@ footer .assistance-footer {
     width: 377px;
     margin-left: auto;
     margin-right: auto;
-
+    padding: 0;
     gap: 10px;
   }
 
