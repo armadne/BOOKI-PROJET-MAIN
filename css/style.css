@@ -26,6 +26,9 @@ nav {
   align-items: flex-start;
 }
 
+
+
+
 ul {
   display: flex;
   gap: 30px;
@@ -35,12 +38,14 @@ ul {
 }
 
 li {
-  padding: 10px 5px;
+    border-top: 2px solid transparent;
+  padding: 8px 5px;
 }
 
 li:hover {
-  border-top: 3px #0065fc solid;
-  color: #0065fc;
+  border-top: 2px #0065fc solid;
+
+  
 }
 
 .header-title {
@@ -721,7 +726,10 @@ footer .assistance-footer {
     width: 50%;
     text-align: center;
     padding: 10px;
+    border-top: 2px solid transparent;
+    
   }
+
 
   nav ul {
     gap: 10px;
@@ -731,7 +739,7 @@ footer .assistance-footer {
   li:hover {
     border-top: none;
     border-bottom: 2px #0065fc solid;
-    color: #0065fc;
+    
   }
 
   li {
