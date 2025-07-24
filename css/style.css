@@ -678,12 +678,17 @@ footer .assistance-footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+
+
   .main-container {
+    
     padding: 0;
+
   }
 
   header {
-    padding: 0;
+    padding: 0 15px;
   }
 
   .header-texte {
@@ -896,8 +901,8 @@ footer .assistance-footer {
   }
 
   .activites-a-marseille {
-    padding: 0;
-    margin: 0;
+    padding: 0 ;
+    margin: 0 ;
     margin-top: 40px;
     width: 100%;
   }
