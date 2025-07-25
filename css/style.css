@@ -534,21 +534,16 @@ footer .assistance-footer {
 
   .hebergements-cards {
      
-    /*display: flex;
-    gap: 45px;*/
 
       display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         padding: 1px 0px;
+      
   }
 
   .hebergements-cards .card {
-    /*width: 251px;
-    height: 230px;
 
-    border-radius: 20px;
-    padding-bottom: 15px;*/
 
       flex: 1 1 calc(33.33% - 20px); /* 3 cartes par ligne */
 width: 100%;
