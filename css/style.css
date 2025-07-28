@@ -859,6 +859,7 @@ footer .assistance-footer {
   nav ul {
     gap: 10px;
     width: 100%;
+    flex-wrap: nowrap;
   }
 
   li:hover {
@@ -966,11 +967,18 @@ footer .assistance-footer {
     box-shadow: 0px 3px 15px 0px #0000001a;
   }
 
+
+  .hebergements-cards a {
+    width: 100%;
+  }
+
+
   .hebergements-cards {
     flex-direction: column;
     box-sizing: border-box;
     padding: 0 10px;
-    grid-template-columns: 1fr; /* 1 seule card par ligne */
+    /*width: 286vw;*/
+   /* grid-template-columns: 1fr; /* 1 seule card par ligne */
   
   }
 
@@ -1011,8 +1019,8 @@ footer .assistance-footer {
   .activites-cards {
     display: flex;
     padding: 15px 13px;
-
     flex-direction: column;
+    gap: 20px;
   }
 
   .hebergements-a-marseille {
