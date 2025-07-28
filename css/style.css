@@ -828,9 +828,15 @@ footer .assistance-footer {
     padding: 13px 10px;
   }
 
+  .hebergements-title-hebergement
+  {
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+
   .hebergements-title {
     margin-top: 15px;
-    padding: 0px 18px;
+    padding: 0px 25px;
   }
 
   #logo {
@@ -976,7 +982,7 @@ footer .assistance-footer {
   .hebergements-cards {
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 3px;
     /*width: 286vw;*/
    /* grid-template-columns: 1fr; /* 1 seule card par ligne */
   
@@ -1008,7 +1014,7 @@ footer .assistance-footer {
   .populaires-cards {
     flex-direction: column;
     align-items: center;
-    padding-right: 16px;
+    padding-right: 0px;
   }
 
   .populaires-cards a {
@@ -1018,7 +1024,7 @@ footer .assistance-footer {
 
   .activites-cards {
     display: flex;
-    padding: 15px 13px;
+    padding: 15px 20px;
     flex-direction: column;
     gap: 20px;
   }
@@ -1028,6 +1034,14 @@ footer .assistance-footer {
     margin: 0;
     width: 100%;
   }
+
+  .hebergements-a-marseille .populaires
+  {
+            width: 100%;
+        padding: 18px 10px;
+  }
+
+
 
   .hebergements-a-marseille section {
     padding: 0 13px;
@@ -1057,6 +1071,11 @@ footer .assistance-footer {
     height: 160px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+  }
+
+    .populaires-cards
+  {
+            padding: 12px 0px;
   }
 
   .populaires-cards .card {
