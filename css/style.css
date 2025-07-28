@@ -209,6 +209,10 @@ input {
   gap: 4px;
 }
 
+.hebergements-cards a {
+    width: 30%;
+}
+
 .card img {
   width: 243px;
   height: 124px;
@@ -562,8 +566,8 @@ nav ul {
   .hebergements-cards {
      
 
-      display: grid;
-    grid-template-columns: repeat(3, 1fr);
+      /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
     gap: 15px;
     width: 100%;
       
@@ -623,7 +627,7 @@ nav ul {
 
   .populaires-cards .card {
     gap: 8px;
-    padding: 0px;
+    padding: 0px 5px;
   }
 
   .hebergements-a-marseille {
@@ -643,8 +647,8 @@ nav ul {
 
       .hebergements-a-marseille .populaires {
 
-                width: auto;
-        padding: 18px 0px;
+        width: 98%;
+        padding: 18px 13px;
         box-sizing: border-box;
         margin: 20px 0px;
       }
@@ -679,12 +683,12 @@ nav ul {
 
   .populaires-cards a {
     width: 100%;
-    max-width: 268px;
+    /*max-width: 268px;*/
   }
 
   .populaires-cards img {
-    width: 91px;
-    height: 146px;
+    width: 100px;
+    height: 135px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-width: 5px;
@@ -763,6 +767,25 @@ nav ul {
   border-top-right-radius: 20px;
 
   }
+
+
+
+footer .propos-footer {
+
+  padding: 20px;
+}
+
+footer .hebergement-footer {
+
+  padding: 20px;
+}
+
+footer .assistance-footer {
+
+  padding: 20px;
+  height: 205px;
+}
+
 }
 
 /**********************************************************/
