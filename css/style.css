@@ -107,7 +107,7 @@ input {
 
   background: #f2f2f2;
 
-  width: 50px;
+  width: 45px;
   height: 34px;
   padding-inline: 20px;
 
@@ -117,7 +117,7 @@ input {
 
 #cadre-icone-position {
   background: #f2f2f2;
-  padding: 10px;
+  padding: 10px 6px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   display: flex;
@@ -480,6 +480,54 @@ footer .assistance-footer {
 @media (max-width: 1024px) {
   /**** HEADER ******/
 
+  section#barre-recherche 
+  {
+        display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 0px;
+  }
+
+  #cadre-icone-position
+  {
+     background-color: #f2f2f2;
+  padding: 18px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-shrink: 0;
+  }
+
+#icone-position {
+    width: 18px;
+  height: 20px;
+}
+
+
+#barre-recherche input {
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+#btn-rechercher {
+  padding: 16px 20px;
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 0 15px 15px 0;
+  flex-shrink: 0;
+}
+
   * {
     box-sizing: border-box;
   }
@@ -522,6 +570,9 @@ footer .assistance-footer {
     width: 20px;
     height: 20px;
   }
+
+
+
 
   #recherche-button {
     font-size: 16px;
