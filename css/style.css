@@ -10,6 +10,14 @@ body {
   padding: 0;
 }
 
+
+.fa-chart-line
+{
+
+    margin: 5px;
+}
+
+
 #logo {
   width: auto;
   height: auto;
@@ -787,6 +795,7 @@ footer .assistance-footer {
     white-space: normal;
     word-break: break-word;
   }
+
 
   .populaires-title {
     margin-top: 10px;
