@@ -739,7 +739,7 @@ footer .assistance-footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 cartes par ligne */
     gap: 10px;
-    padding: 1px 7px;
+    padding: 1px 19px;
   }
 
   .card-activite-marseille {
