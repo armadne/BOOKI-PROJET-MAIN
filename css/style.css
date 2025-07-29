@@ -187,6 +187,7 @@ input {
   font-size: 14px;
 }
 
+
 .hebergements-cards .card {
   background: #ffffff;
 
@@ -355,7 +356,6 @@ section.activites-marseille {
 .populaires-title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .populaires-cards .card {
