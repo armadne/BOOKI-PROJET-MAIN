@@ -593,18 +593,30 @@ footer .assistance-footer {
   }
 
   /****************/
+  
+  .section-title
+  {
+    padding: 0 28px;
+  }
 
   /** HEBERGEMENT MARSEILLE **/
 
   .hebergements-cards {
-    gap: 15px;
+    gap: 20px;
     width: 100%;
+    justify-content: center;
   }
 
   .hebergements-cards .card {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+
+  #afficher_plus {
+    padding: 0 32px;
+
   }
 
   .card img {
@@ -795,6 +807,11 @@ footer .assistance-footer {
     white-space: normal;
     word-break: break-word;
   }
+
+      .section-title {
+        padding: 0 0px;
+
+      }
 
 
   .populaires-title {
